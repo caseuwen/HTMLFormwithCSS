@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Info Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>User Information Form</h1>
+  <form action="results.html" method="GET">
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" placeholder="Choose a username" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required />
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0" max="120" />
+    </div>
+
+    <div class="form-group">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+    </div>
+
+    <div class="form-group">
+      <label for="season">Favorite Season:</label>
+      <select id="season" name="season">
+        <option value="" disabled selected>Select season</option>
+        <option value="Spring">Spring</option>
+        <option value="Summer">Summer</option>
+        <option value="Fall">Fall</option>
+        <option value="Winter">Winter</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="favday">Favorite Day of the Week:</label>
+      <select id="favday" name="favday">
+        <option value="" disabled selected>Select day</option>
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="url">URL</label>
+      <input type="url" id="url" name="url" />
+    </div>
+
+    <div class="form-group">
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#000000" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
